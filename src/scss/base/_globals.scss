@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1 {
+  font-family: "Bebas Neue", sans-serif;
+}
+main {
+  background: url("../../img/background.jpg");
+
+  background-attachment: scroll;
+
+}
+
+.container {
+  width: 95%;
+  margin: 0 1rem;
+}
+
+.row {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
