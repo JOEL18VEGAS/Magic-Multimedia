@@ -329,7 +329,7 @@ footer {
 /* Titles and Descriptions Container */
 .titles-descriptions-container {
   display: flex;
-  flex-direction: row; /* Los divs estarán en horizontal por defecto */
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 80%;
@@ -343,29 +343,29 @@ footer {
 
 /* Title and Description Styles */
 .title-description {
-  width: 100%; /* Hacemos que ocupen todo el ancho disponible */
+  width: 100%;
   margin-bottom: 2rem;
   text-align: center;
-  padding: 20px; /* Agregamos el padding aquí para que solo afecte al título */
+  padding: 20px;
 }
 
 .title-description h3 {
-  background-color: #d89f06; /* Agregamos el fondo solo al título */
-  margin-bottom: 1rem; /* Espaciado entre título y descripción */
+  background-color: #d89f06;
+  margin-bottom: 1rem;
   font-size: 2.4rem;
-  padding: 10px; /* Añadimos padding al título para separarlo del fondo */
+  padding: 10px;
 }
 
 .title-description p {
   font-size: 2rem;
   font-weight: 300;
-  background-color: transparent; /* Quitamos el fondo de las descripciones */
+  background-color: transparent;
 }
 
 /* Media Query para dispositivos móviles */
 @media (max-width: 767px) {
   .titles-descriptions-container {
-    flex-direction: column; /* Los divs estarán en vertical en dispositivos móviles */
+    flex-direction: column;
   }
 }
 .project-section {
