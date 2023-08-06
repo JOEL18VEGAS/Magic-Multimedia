@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -313,52 +314,60 @@ footer {
   margin: 20px;
 }
 
+/* Services Container */
 .article-services {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background-color: #d89f06;
+  background-color: #2c2a1f;
   color: white;
   min-height: 80vh;
   width: 100%;
 }
-.article-services .titles-container {
+
+/* Titles and Descriptions Container */
+.titles-descriptions-container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row; /* Los divs estarán en horizontal por defecto */
+  justify-content: space-between;
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  background-color: #2c2a1f;
-  color: white;
   flex-wrap: wrap;
   margin: 2rem 0;
   text-align: center;
   font-size: 2.4rem;
   font-weight: 300;
-  padding: 20px;
-}
-.article-services .titles-container h3 {
-  width: auto;
-  margin-bottom: 20px;
-}
-.article-services .descriptions-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  color: #2c2a1f;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-.article-services .descriptions-container p {
-  width: auto;
-  font-size: 2rem;
-  font-weight: 300;
-  padding: 20px;
 }
 
+/* Title and Description Styles */
+.title-description {
+  width: 100%; /* Hacemos que ocupen todo el ancho disponible */
+  margin-bottom: 2rem;
+  text-align: center;
+  padding: 20px; /* Agregamos el padding aquí para que solo afecte al título */
+}
+
+.title-description h3 {
+  background-color: #d89f06; /* Agregamos el fondo solo al título */
+  margin-bottom: 1rem; /* Espaciado entre título y descripción */
+  font-size: 2.4rem;
+  padding: 10px; /* Añadimos padding al título para separarlo del fondo */
+}
+
+.title-description p {
+  font-size: 2rem;
+  font-weight: 300;
+  background-color: transparent; /* Quitamos el fondo de las descripciones */
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 767px) {
+  .titles-descriptions-container {
+    flex-direction: column; /* Los divs estarán en vertical en dispositivos móviles */
+  }
+}
 .project-section {
   padding: 5rem 0;
   background-color: #2C2A1F;
