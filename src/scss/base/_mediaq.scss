@@ -228,7 +228,6 @@
       align-items: center;
       width: 35%;
       height: 100%;
-      background-color: #ffba00;
   
       h2 {
         font-size: 4rem;
@@ -387,12 +386,13 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      width: 80%;
+      align-items: center;
+      width: 50%;
       height: 100%;
       background-color: white;
       color: #2c2a1f;
       padding: 0 20px;
+      margin-left: 50px;
     }
     h1 {
       font-size: 8rem;
@@ -404,18 +404,22 @@
     p {
       font-size: 2rem;
       font-weight: 300;
-      width: 50%;
+      width: 20%;
       margin-bottom: 20px;
       text-shadow: 0 0 1px #2c2a1f;
       padding: 0 20px;
+      text-align: center;
     }
 
     form {
       display: flex;
+      background-color: #ffba00;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding: 10px 20px;
       border-radius: 10px;
-      width: 50%;
+      width: 100%; 
 
       div {
         margin-bottom: 20px;
@@ -466,10 +470,9 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 20%;
+      width: 40%;
       height: 100%;
-      background-color: #ffba00;
-  
+
       h2 {
         font-size: 4rem;
         font-weight: 700;
